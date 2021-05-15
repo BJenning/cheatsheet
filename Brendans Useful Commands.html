@@ -1,10 +1,20 @@
 <html lang="en">
-<head></head>
+<head>
+  <style type="text/css">
+    th,tr,td {
+        padding-left: 15px;
+    }
+    table {
+      text-align: left;
+    }
+    
+</style>
+</head>
 <body>
     <div>
         <h3>Useful Vim Commands</h3>
-        <table id="vim_commands" style="text-align:left">
-          <tr>
+        <table id="vim_commands">
+          <tr >
             <th>Inline Commands</th>
             <th>What it does</th>
           </tr>
@@ -15,6 +25,22 @@
           <tr>
             <td>i a I A</td>
             <td>Enter insert mode (insert at cursor/append after cursor/insert at beginning of line/append to end of line).</td>
+          </tr>
+          <tr>
+            <th>Visual Mode Commands</th>
+            <th>What it does</th>
+          </tr>
+          <tr>
+            <td>Ctrl-v</td>
+            <td>block-wise visual mode</td>
+          </tr>
+          <tr>
+            <td>Shift+V</td>
+            <td>line-wise visual mode</td>
+          </tr>
+          <tr>
+            <td>Ctrl+V + select lines + Shift+I + [make edits] + esc</td>
+            <td>Columnar select</td>
           </tr>
           <tr>
             <th>Search Commands</th>
